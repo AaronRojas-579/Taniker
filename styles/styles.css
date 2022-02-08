@@ -314,6 +314,8 @@ body {
 @media screen and (max-width: 425px) {
   .inicio__portada h2 {
     font-size: 20px;
+    font-weight: bloder;
+    text-align: center;
   }
 }
 
@@ -558,6 +560,12 @@ body {
   display: block;
   margin-bottom: 1.5rem;
   text-shadow: #3c6e71, 2px, 2px;
+}
+
+@media screen and (max-width: 425px) {
+  .incio__galery h2 {
+    font-size: 1.5rem;
+  }
 }
 
 .galery__container {
