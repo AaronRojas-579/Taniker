@@ -1,0 +1,54 @@
+$fondo:rgb(190, 227, 219);
+$fondo1:rgb(137, 176, 174);
+$fondo2:rgb(60, 110, 113);
+@keyframes logoFooter {
+    0%{
+      transform: rotate(0deg);
+    }
+    25%{
+      transform: rotate(45deg);
+    }
+    50%{
+      transform: rotate(90deg);
+    }
+    75%{
+      transform: rotate(135deg);
+    }
+    100%{
+      transform: rotate(180deg);
+    }
+  }
+  @mixin boton ($size){
+    @if $size == desktop {
+      color:$fondo2;
+      font-weight: bloder;
+      padding:.6rem 4rem;
+      background-color: $fondo1;
+      border: 3px solid $fondo2;
+      font-size: 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      position: absolute;
+    }
+    @else if $size == mobile {
+      color:$fondo2;
+      font-weight: bloder;
+      padding:.5rem 2.5rem;
+      background-color: $fondo1;
+      border: 2px solid $fondo2;
+      position: absolute;
+      border-radius: 30px;
+      font-size: 1.3rem;
+      border-radius: 60px;
+    }
+  }
+
+  @mixin texto_taniker{
+    color:$fondo2;
+    font-size: 2.5rem;
+    font-weight: bloder;
+    text-align: center;
+    display: block;
+    margin-bottom:1.5rem ;
+    text-shadow: rgb(60, 110, 113),2px,2px;
+  }

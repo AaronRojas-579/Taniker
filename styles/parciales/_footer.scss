@@ -1,0 +1,85 @@
+.footer {  display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "footer__redes footer__nav footer__logo"
+      "footer__text footer__text footer__text";
+    background-color:$fondo1;
+    width: 100%;
+    justify-content: space-around;
+    align-content: center;
+    padding-top:1rem;
+    height: auto;
+    &__logo { grid-area: footer__logo;
+      background-image:url(../../imagenes/logos/logofooter.png);
+      background-size: cover;
+      background-position:center;
+      width: 15rem;
+      height: 17rem;
+      animation: logoFooter;
+      animation-duration: 3s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+    }
+    &__nav { grid-area: footer__nav;
+        width: auto;
+        height: auto;
+        a{
+            font-size: 1.2rem;
+            color: $fondo2;
+            transition: all .2s;
+            padding: .5rem;
+            &:hover{
+              color: $fondo;
+              transform: scale(1.1,1.1);
+            }
+        }
+    } 
+    &__redes {
+        grid-area:footer__redes;
+        width: 10rem;
+        height: auto;
+        ul{
+          list-style: none;}
+        &--logo{
+            width: 3rem;
+            margin: 1rem;
+            object-fit: cover;
+            position: relative;
+            left: 15px;
+            transition: all .2s;
+            &:hover{
+              transform: scale(1.2,1.2);
+            }
+        }
+        &--Taniker{
+          width:8rem;
+          height:2rem;
+          object-fit: cover;
+        }
+    }
+      &__text { grid-area: footer__text; 
+        width: 100%;
+        height:auto;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding-bottom:1rem;
+        p{
+          color: $fondo2;
+          font-weight: bolder;
+        }
+        hr{
+          border: &fondo2 4px solid;
+          width: 100%;
+        }
+      }
+    }
+    @media (max-width:579px) {
+      .footer__logo{
+        display: none;
+      }
+    }
