@@ -93,7 +93,8 @@ header nav .menu a {
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
   grid-auto-flow: row;
-      grid-template-areas: "footer__redes footer__nav footer__logo" "footer__text footer__text footer__text";
+      grid-template-areas: "footer__redes footer__nav footer__logo"
+ "footer__text footer__text footer__text";
   background-color: #89b0ae;
   width: 100%;
   -ms-flex-pack: distribute;
@@ -269,7 +270,10 @@ body {
           justify-content: space-between;
   gap: 10px 10px;
   grid-auto-flow: row;
-      grid-template-areas: "inicio__portada inicio__portada" "inicio__presentacion inicio__presentacion" "incio__hombre inicio__mujer" "incio__galery incio__galery";
+      grid-template-areas: "inicio__portada inicio__portada"
+ "inicio__presentacion inicio__presentacion"
+ "incio__hombre inicio__mujer"
+ "incio__galery incio__galery";
 }
 
 .inicio__portada {
@@ -616,7 +620,8 @@ body {
   background-color: #bee3db;
   width: 100%;
   height: auto;
-  padding: .5rem .5rem;
+  padding: 0 .5rem;
+  padding-bottom: 1rem;
 }
 
 .catalogo__img {
