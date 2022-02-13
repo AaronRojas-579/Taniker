@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Inconos -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined">
+    <!-- Mis estilos CSS -->
     <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Animacion AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Taniker</title>
 </head>
 <body>
@@ -18,7 +25,9 @@
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img class="logo_size"src="./imagenes/logos/logo.png" alt="Logo Taniker"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+              <span class="material-icons-outlined icon">
+              more_vert
+              </span>
           </button>
           <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -49,9 +58,15 @@
       <section>
         <div class="inicio">
           <div class="inicio__portada">
-            <h1>Con tu ropa demostras mucho</h1>
+            <div data-aos="fade-up"data-aos-duration="1000">
+              <h1>Con tu ropa demostras mucho</h1>
+            </div>
+            <div data-aos="fade-up"data-aos-duration="1000">
             <h2>Indumentaria para todas las estaciones a muy buen precio</h2>
-            <a href="./Taniker_nav/ubicacion.html">Mirá donde nos puedes encontrar</a>
+            </div>
+            <div data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="2000">
+              <a href="./Taniker_nav/ubicacion.html">Mirá donde nos puedes encontrar</a>
+            </div>
           </div>
           <div class="inicio__presentacion">
             <video src="./imagenes/videopromocional.mp4" autoplay muted loop></video>
@@ -60,11 +75,15 @@
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eaque eum ipsum, alias reiciendis illo illum esse ducimus, cupiditate rerum enim. Omnis, corporis veniam minima exercitationem minus numquam corrupti iusto.</p>
             </div>
           </div>
-            <div class="incio__hombre">
-              <a href="./Taniker_nav/Indumentaria/hombre.html">Hombre</a>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              <div class="incio__hombre">
+                <a href="./Taniker_nav/Indumentaria/hombre.html">Hombre</a>
+              </div>
             </div>
-            <div class="inicio__mujer">
-              <a href="./Taniker_nav/Indumentaria/mujer.html">Mujer</a>
+            <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+              <div class="inicio__mujer">
+                <a href="./Taniker_nav/Indumentaria/mujer.html">Mujer</a>
+              </div>
             </div>
           <div class="incio__galery">
             <h2>Algunos de nuestros productos más vendidos</h2>
@@ -75,9 +94,6 @@
               <div class="galery__item"><img src="./imagenes/img4.jpg" alt="Imagen 4" class="galery__img"></div>
               <div class="galery__item"><img src="./imagenes/img5.jpg" alt="Imagen 5" class="galery__img"></div>
               <div class="galery__item"><img src="./imagenes/img6.jpg" alt="Imagen 6" class="galery__img"></div>
-              <div class="galery__item"><img src="./imagenes/img7.jpg" alt="Imagen 7" class="galery__img"></div>
-              <div class="galery__item"><img src="./imagenes/img8.jpg" alt="Imagen 8" class="galery__img"></div>
-              <div class="galery__item"><img src="./imagenes/img9.jpg" alt="Imagen 9" class="galery__img"></div>
             </div>
           </div>
         </div>
@@ -114,7 +130,10 @@
           <p>Todos los derecho reservado &copy; 2022 Taniker </p>
         </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
