@@ -1,0 +1,162 @@
+@import"./mediaquerie";
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
+.ubicacion {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-auto-columns: 1fr;
+    gap: 12px 12px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "ubicacion__map ubicacion__map"
+      "ubicacion__compravirtual ubicacion__compralocal"
+      "ubicacion__video ubicacion__calidad";
+      width: 100%;
+      margin: 0 0;
+      @include laptop{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-auto-columns: auto;
+        gap: 12px 12px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "ubicacion__map"
+          "ubicacion__compravirtual"
+          "ubicacion__compralocal"
+          "ubicacion__calidad"
+          "ubicacion__video";
+          margin-bottom:1rem ;
+      }
+  }
+  
+  .ubicacion__map { grid-area: ubicacion__map;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: 25rem;
+    @include laptop{
+      padding:1rem;
+      margin:auto;
+      height: 20rem;
+    }
+
+    .map{
+        width: 100%;
+        height: 100%;
+    }
+}
+  
+  .ubicacion__compravirtual { grid-area: ubicacion__compravirtual; 
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width:auto;
+    padding: 4rem;
+    background-color: $fondo;
+    margin-left:1.8rem;
+    border:$fondo2 solid 2px;
+    @include laptop{
+      padding: 1rem;
+      margin: 0 1rem ;
+    }
+    p{
+        @include texto_taniker
+        font-size:1.7rem;
+        @include breakpoint (mobile){
+          font-size: 1rem;
+        }
+    }
+    h2{
+        @include tituloTaniker
+        @include breakpoint (mobile){
+          font-size: 2rem;
+        }
+    }
+}
+  
+  .ubicacion__compralocal { grid-area: ubicacion__compralocal;
+    background-color: $fondo2;
+    width:auto;
+    margin-right:1.8rem;
+    height:100%;
+    border: $fondo solid 2px;
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    @include laptop{
+      padding: 1rem;
+      margin: 0 1rem ;
+    }
+    p{
+      @include texto_taniker
+      font-size:1.7rem;
+      padding: 1rem;
+      color: $fondo;
+      @include breakpoint (mobile){
+        font-size: 1rem;
+      }
+    }
+    h2{
+      @include tituloTaniker
+      color:$fondo;
+      @include breakpoint (mobile){
+        font-size: 2rem;
+      }
+    }
+}
+  
+  .ubicacion__video { grid-area: ubicacion__video;
+    padding-bottom: 1.5rem;
+    padding-right: 1.68rem;
+    height: 100%;
+    @include laptop{
+      margin: 0 1rem;
+      padding: 0;
+    }
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-left: 1.8rem;
+      margin-bottom: 1.5rem;
+      @include laptop{
+        margin: auto;
+        
+
+      }
+    }
+  }
+
+  
+  .ubicacion__calidad { grid-area: ubicacion__calidad; 
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width:auto;
+    height: auto;
+    padding: 4rem;
+    background-color: $fondo;
+    margin-right: 1.8rem;
+    margin-bottom: 1.5rem;
+    border:$fondo2 solid 2px;
+    @include laptop{
+      padding: 1rem;
+      margin: 0 1rem;}
+    p{
+        @include texto_taniker
+        font-size:1.7rem;
+        @include breakpoint (mobile){
+          font-size: 1rem;
+        }
+    }
+    h2{
+        @include tituloTaniker
+        @include breakpoint (mobile){
+          font-size: 2rem;
+        }
+    }
+  }
+  
