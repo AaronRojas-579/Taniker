@@ -1,0 +1,96 @@
+@import "./mediaquerie";
+*{
+    box-sizing: border-box;
+}
+.contacto{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    height:95vh;
+    margin: 1rem .5rem;
+    &__img{
+        width: 35vw;
+        height: 100%;
+        background-image: url(../../imagenes/img11.jpg);
+        background-position: center;
+        background-size: cover;
+        @include laptop{
+            display: none;
+        }
+    }
+    &__form{
+        width:75vw;
+        height:100%;
+        background-image:url(../../imagenes/portadas/nuevacoleccion2.jpg);
+        display: flex;
+        flex-flow:column nowar;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        @include laptop{
+            width: 100%;
+        }
+        @include breakpoint (mobile){
+            height: 60wh;
+        }
+        form{
+            width:40rem;
+            border: 2px solid $fondo2;
+            background:rgba(190, 227, 219,0.7);
+            border-radius: 20px;
+            padding: 1.5rem;
+            @include breakpoint(mobile){
+                width:90vw;
+            }
+            @include laptop{
+                width: 80vw;
+            }
+            h2{
+                @include tituloTaniker
+            }
+            *{display: block;}
+        }
+    }
+    &__requisito{
+        font-size:1.4rem;
+        color: $fondo2;
+        font-weight: 700;
+        text-align: left;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+    &__input{
+        width: 100%;
+        height: 2.5rem;
+        border:none;
+        font-size: 1.2rem;
+        color: $fondo2;
+        padding: 1rem;
+        font-family: $fuentetaniker;
+        &--textarea{
+            @extend .contacto__input;
+            height: 7rem;
+            max-height:7rem ;
+            color: $fondo2;
+        }
+    }
+    &__select{
+        border:none;
+        height: 2.5rem;
+        font-family: $fuentetaniker;
+        font-size: 1.2rem;
+    }
+    &__boton{
+        margin: 1rem;
+        padding: .5rem;
+        background-color:$fondo2;
+        color: $fondo;
+        font-family: $fuentetaniker;
+        font-size: 1.2rem;
+        border-radius: 10px;
+
+        border: 2px $fondo solid;
+    }
+}

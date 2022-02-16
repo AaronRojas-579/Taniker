@@ -1,12 +1,15 @@
 // BreakPoints
-@mixin breakpoint ($ponit) {
+@mixin breakpoint($ponit) {
     @if $ponit == mobile{
         @media screen and (max-width:425px) {@content;}
     }
-    @else if $point == laptop{
+    @else if $point == notebook{
         @media screen and (max-width:768px) {@content;}
     }
     @else if $point == desktop{
         @media screen and (max-width:1024px) {@content;}
     }
 } 
+@mixin laptop {
+    @media screen and (max-width:768px){@content;}
+}

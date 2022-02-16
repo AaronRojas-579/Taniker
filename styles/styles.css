@@ -760,4 +760,149 @@ body {
   gap: 7px;
   padding-top: 1.5em;
 }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95vh;
+  margin: 1rem .5rem;
+}
+
+.contacto__img {
+  width: 35vw;
+  height: 100%;
+  background-image: url(../../imagenes/img11.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .contacto__img {
+    display: none;
+  }
+}
+
+.contacto__form {
+  width: 75vw;
+  height: 100%;
+  background-image: url(../../imagenes/portadas/nuevacoleccion2.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowar;
+          flex-flow: column nowar;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .contacto__form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .contacto__form {
+    height: 60wh;
+  }
+}
+
+.contacto__form form {
+  width: 40rem;
+  border: 2px solid #3c6e71;
+  background: rgba(190, 227, 219, 0.7);
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+@media screen and (max-width: 425px) {
+  .contacto__form form {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacto__form form {
+    width: 80vw;
+  }
+}
+
+.contacto__form form h2 {
+  color: #3c6e71;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.contacto__form form * {
+  display: block;
+}
+
+.contacto__requisito {
+  font-size: 1.4rem;
+  color: #3c6e71;
+  font-weight: 700;
+  text-align: left;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.contacto__input, .contacto__input--textarea {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  font-size: 1.2rem;
+  color: #3c6e71;
+  padding: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.contacto__input--textarea {
+  height: 7rem;
+  max-height: 7rem;
+  color: #3c6e71;
+}
+
+.contacto__select {
+  border: none;
+  height: 2.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+}
+
+.contacto__boton {
+  margin: 1rem;
+  padding: .5rem;
+  background-color: #3c6e71;
+  color: #bee3db;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px #bee3db solid;
+}
 /*# sourceMappingURL=styles.css.map */

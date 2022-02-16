@@ -50,6 +50,32 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="contacto">
+        <div class="contacto__img"></div>
+        <div class="contacto__form">
+          <form action="#">
+            <h2 class="contacto__title">Contacto</h2>
+            <label for="UserName" class="contacto__requisito">Nombre</label>
+            <input type="text" name="UserName" placeholder="Ingrese su Nombre" class="contacto__input" required>
+            <label for="UserSex" class="contacto__requisito">Ingrese su Genero</label>
+            <select id="UserSex" class="contacto__select">
+              <option value="#" selected disabled>Ingrese su Sexo</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+            </select>
+            <label for="Email" class="contacto__requisito">Correo Electronico</label>
+            <input type="email" placeholder="Ingrese su mail" name="Email" class="contacto__input" required>
+            <label for="telefono" class="contacto__requisito">Teléfono</label>
+            <input type="tel" name="telefono" class="contacto__input" placeholder="Ingrese su teléfono">
+            <label for="mensaje" class="contacto__requisito">Escriba su Mensaje</label>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="contacto__input--textarea" placeholder="Escriba su mensaje" required></textarea>
+            <input type="reset" class="contacto__boton" value="Limpiar Formulario">
+            <input type="submit" class="contacto__boton" value="Enviar">  
+          </form>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__logo"></div>
       <div class="footer__nav">

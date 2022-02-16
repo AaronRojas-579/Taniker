@@ -1,6 +1,14 @@
 $fondo:rgb(190, 227, 219);
 $fondo1:rgb(137, 176, 174);
 $fondo2:rgb(60, 110, 113);
+$fuentetaniker:'Source Sans Pro', sans-serif;
+@mixin tituloTaniker {
+  color: $fondo2;
+  font-size: 3rem;
+  margin: 1rem;
+  text-align: center;
+  font-family: $fuentetaniker;
+}
 @keyframes logoFooter {
     0%{
       transform: rotate(0deg);
