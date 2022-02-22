@@ -3,18 +3,22 @@
     display: grid;
     gap: 3px;
     grid-template-columns: auto;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
     background-color: $fondo2;
     width: 100%;
     height:auto;
-    padding:.5rem .5rem;
+    padding:7rem 0;
     padding-bottom:2.5rem;
-    &__img{
+    &__img {
         flex:2 0 300px;
         height: 22rem;
+        width: 100%;
         object-fit: cover;
         @include breakpoint (mobile){
             height: 18rem;
+        }
+        &:hover{
+            object-fit: contain;
         }
     }
     &__video{
@@ -37,6 +41,10 @@
         align-items: center;
         padding: 1rem;
         overflow: hidden;
+        @include breakpoint (mobile){
+            padding: 0 1rem;
+            margin: 0 1rem;
+        }
         h3{
             font-weight: bloder;
             font-size: 2.7rem;
@@ -44,6 +52,16 @@
         p{
             text-align: left;
             font-size: 1.5rem;
+        }
+        @include breakpoint (mobile){
+            h3{
+                font-weight: bloder;
+                font-size: 2.3rem;
+            }
+            p{
+                text-align: left;
+                font-size: 1.3rem;
+            }
         }
     }
 }
@@ -54,8 +72,58 @@
     justify-content: space-around;
     align-items: center;
     gap: 7px;
-    padding-top:1.5em;
+    padding-top:.5rem;
     }
   }
+.tophombre{
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top:4rem;
+    gap: 1rem;
+    background-color: $fondo;
+    h2{
+        @include texto_taniker
+        font-size:3.5rem;
+        font-weight: 700;
+        text-shadow: -4px 3px 5px $fondo1;
+    }
+    h3{
+        @include texto_taniker
+        font-size:2.5rem;
+        text-shadow: -4px 3px 5px $fondo1;
+        font-weight: 700;
+    }
+    @include breakpoint (mobile){
+        padding-top:5rem;
+        h2{
+            font-size:2.5rem;
+        }
+        h3{
+            font-size:1.9rem;
+        }
+    }
+}
+.topventas{
+    padding: 2rem 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
 
+.imgHombre{
+    height: 450px;
+    width: 300px;
+    object-fit: cover;
+    margin: 1.5rem 0;
+    transition: all .4s;
+    &:hover{
+        transform: scale(1.2,1.2);
+    }
+    @include breakpoint (mobile){
+        height: 400px;
+        width: 250px;
+    }
+}
   

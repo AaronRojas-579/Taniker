@@ -15,6 +15,7 @@ main{
       "ubicacion__video ubicacion__calidad";
       width: 100%;
       margin: 0 0;
+      padding-top:7rem;
       @include laptop{
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto auto;
@@ -28,6 +29,11 @@ main{
           "ubicacion__calidad"
           "ubicacion__video";
           margin-bottom:1rem ;
+          .ubicacion__map { grid-area: ubicacion__map;}
+          .ubicacion__compravirtual { grid-area: ubicacion__compravirtual;}
+          .ubicacion__compralocal { grid-area: ubicacion__compralocal;}
+          .ubicacion__video { grid-area: ubicacion__video;}
+          .ubicacion__calidad { grid-area: ubicacion__calidad;}
       }
   }
   
@@ -75,6 +81,24 @@ main{
     }
 }
   
+  .ubicacion__icons{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+    &--items{
+      font-size: 3rem;
+      color: $fondo2;
+      @include laptop{
+        font-size: 2.5rem;
+      }
+      @include breakpoint (mobile){
+        font-size: 1.6rem;
+      }
+    }
+  }
+
   .ubicacion__compralocal { grid-area: ubicacion__compralocal;
     background-color: $fondo2;
     width:auto;
@@ -85,6 +109,7 @@ main{
     flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 4rem;
     @include laptop{
       padding: 1rem;
       margin: 0 1rem ;
@@ -92,7 +117,6 @@ main{
     p{
       @include texto_taniker
       font-size:1.7rem;
-      padding: 1rem;
       color: $fondo;
       @include breakpoint (mobile){
         font-size: 1rem;

@@ -27,12 +27,6 @@
             </button>
             <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Indumentaria
@@ -41,6 +35,9 @@
                     <li><a class="dropdown-item" href="./Indumentaria/hombre.html">Ropa de Hombre</a></li>
                     <li><a class="dropdown-item" href="./Indumentaria/mujer.html">Ropa de Mujer</a></li>
                   </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
+                </li>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./ubicacion.html">Ubicación</a>
@@ -58,7 +55,12 @@
           <div class="ubicacion__compravirtual">
             <h2>Formas de Pago</h2>
             <p>Aceptamos todas las formas de pago desde los banco virtuales como Mercado pago o Aulá como tambien los distintos tipos de tarjetas de credito o debito tales como Visa y Mastercard realizamos el pago de forma inmediata, no aceptamos pagos en cuotas.</p>
-            <div class="ubicacion__iconos"></div>
+            <div class="ubicacion__icons">
+              <i class="fa-brands fa-cc-visa ubicacion__icons--items"></i>
+              <i class="fa-brands fa-cc-mastercard ubicacion__icons--items"></i>
+              <i class="fa-solid fa-money-bill-wave ubicacion__icons--items"></i>
+              <i class="fa-brands fa-cc-amex ubicacion__icons--items"></i>
+            </div>
           </div>
           <div class="ubicacion__compralocal">
             <h2>Tambien podes venir y visitar nuestro local</h2>
@@ -105,7 +107,11 @@
           <p>Todos los derecho reservado &copy; 2022 Taniker </p>
         </div>
     </footer>
+    <script src="https://kit.fontawesome.com/db732e8141.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
