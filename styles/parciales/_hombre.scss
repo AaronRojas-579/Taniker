@@ -14,8 +14,14 @@
         height: 22rem;
         width: 100%;
         object-fit: cover;
+        margin:0 2rem ;
+        @include laptop{
+            margin:0 .5rem; 
+        }
         @include breakpoint (mobile){
             height: 18rem;
+            margin-right:0;
+            margin:0 .5rem;
         }
         &:hover{
             object-fit: contain;
@@ -26,12 +32,17 @@
         width: 300px;
         height: 22rem;
         object-fit: cover;
+        margin-right:2rem ;
+        @include laptop{
+            margin:0 .5rem;
+        }
         @include breakpoint (mobile){
             height: 18rem;
+            margin:0 .5rem;
         }
     }
     &__text{
-        margin: 1rem;
+        margin: 2rem 1rem;
         flex:1 0 300px;
         height:auto;
         color:$fondo;
@@ -42,8 +53,8 @@
         padding: 1rem;
         overflow: hidden;
         @include breakpoint (mobile){
-            padding: 0 1rem;
-            margin: 0 1rem;
+            padding: 0;
+            margin: 3.5rem .5rem;
         }
         h3{
             font-weight: bloder;
@@ -56,11 +67,11 @@
         @include breakpoint (mobile){
             h3{
                 font-weight: bloder;
-                font-size: 2.3rem;
+                font-size: 2rem;
             }
             p{
                 text-align: left;
-                font-size: 1.3rem;
+                font-size: 1rem;
             }
         }
     }
@@ -80,19 +91,19 @@
     flex-flow:column nowrap;
     justify-content: center;
     align-items: center;
-    padding-top:4rem;
+    padding:4rem 0;
     gap: 1rem;
-    background-color: $fondo;
+    background-color: $fondo2;
     h2{
         @include texto_taniker
+        color:$fondo;
         font-size:3.5rem;
         font-weight: 700;
-        text-shadow: -4px 3px 5px $fondo1;
     }
     h3{
         @include texto_taniker
+        color:$fondo;
         font-size:2.5rem;
-        text-shadow: -4px 3px 5px $fondo1;
         font-weight: 700;
     }
     @include breakpoint (mobile){

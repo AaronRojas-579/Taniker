@@ -46,6 +46,9 @@
     align-items: center;
     gap:1.5rem;
     overflow: hidden;
+    @include breakpoint (mobile){
+        height: 29rem;
+    }
     & *{
         color:$fondo;
         text-align: center;
@@ -60,6 +63,9 @@
         text-shadow: -4px 3px 3px $fondo2;
         font-weight: 700;
         font-size: 5rem;
+        @include breakpoint (mobile){
+            font-size: 3.5rem;
+        }
     }
     h1{
         text-shadow: -4px 3px 3px $fondo2;
@@ -83,13 +89,14 @@
         background-color: $fondo1;
         padding: 1rem 5rem;
         transition: all .2s;
+        margin-bottom: 2rem;
         &:hover{
             transform: scale(1.1,1.1);
             color:$fondo2;
         }
         @include breakpoint(mobile){
-            font-size:16px;
-            padding:.6rem 1.1rem;
+            font-size:20px;
+            padding:.5rem 1rem;
             }
     }
  }
