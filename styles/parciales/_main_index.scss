@@ -244,3 +244,27 @@
     }
   }
   
+//   Animaciones Hover
+figcaption{
+    font-size: 2rem;
+    font-family: $fuentetaniker;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint (mobile){
+        font-size: 1.1rem;
+    }
+}
+figure{
+background-color:$fondo2 !important;
+}
+
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption{
+    background-color: $fondo2;
+    color: $fondo;
+    @include breakpoint (mobile){
+       padding: 3px;
+    }
+}

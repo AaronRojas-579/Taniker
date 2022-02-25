@@ -15,6 +15,9 @@
         width: 100%;
         object-fit: cover;
         margin:0 2rem ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include laptop{
             margin:0 .5rem; 
         }
@@ -23,8 +26,8 @@
             margin-right:0;
             margin:0 .5rem;
         }
-        &:hover{
-            object-fit: contain;
+        .img__item{
+            width: 100%;
         }
     }
     &__video{
@@ -53,7 +56,7 @@
         padding: 1rem;
         overflow: hidden;
         @include breakpoint (mobile){
-            padding: 0;
+            padding:0 1rem;
             margin: 3.5rem .5rem;
         }
         h3{
